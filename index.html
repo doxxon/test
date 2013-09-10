@@ -13,10 +13,14 @@ $(document).ready(function() {
 });
 </script>
 <style>
+html {
+  overflow: hidden;
+}
 body {
   font-family: verdana;
   font-size: 11px;
   color: #666;
+  overflow: hidden;
 }
 #gallery {
   width: 800px;
@@ -32,7 +36,7 @@ body {
 </head>
 
 <body>
-  <div id="fb-root"></div>
+<div id="fb-root"></div>
 <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
 <script type="text/javascript" charset="utf-8">
     FB.Canvas.setSize();
