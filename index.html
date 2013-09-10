@@ -46,7 +46,11 @@ body {
     xfbml  : false  // parse XFBML
   });
 
-  FB.Canvas.setSize({ width: 500, height: 1000 });
+   window.fbAsyncInit = function () {
+      FB.Canvas.setSize();
+  }
+
+    FB.Canvas.setAutoGrow(7);
 </script>
 <div id="gallery">
 <div>
